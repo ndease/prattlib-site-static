@@ -429,7 +429,7 @@ footer  {
     border-width:  1px !important;
     border-color:  black !important;
     border-radius:  0px !important;
-    background-color:  #0090D0 !important;
+    background-color:  #0C77D4 !important;
     color:  white !important;
     font-family:  "ApercuMedium",  Helvetica,  Arial,  sans-serif !important;
 }
@@ -528,7 +528,7 @@ footer  {
     width:  100%;
     opacity:  0;
     transition:  .5s ease;
-    background-color:  #0090D0;
+    background-color:  #0C77D4;
 }
 #overlay-archives  {
     position:  absolute;
@@ -540,7 +540,7 @@ footer  {
     width:  100%;
     opacity:  0;
     transition:  .5s ease;
-    background-color:  #0090D0;
+    background-color:  #0C77D4;
 }
 #overlay-exhibits  {
     position:  absolute;
@@ -748,7 +748,7 @@ img  {
 }
 .dropdown-item:hover  {
     color:  white !important;
-    background-color:  #0090D0 !important;
+    background-color:  #0C77D4 !important;
 }
 .hide  {
     position:  absolute !important;
@@ -860,7 +860,7 @@ display:block;
 	text-align:center;
         transition-duration: 0.2s;}
 .pratt-btn:hover{
-    background-color:#0090D0 !important;
+    background-color:#0C77D4!important;
     color:white !important;
 text-decoration:none;
         }
