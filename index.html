@@ -69,7 +69,7 @@
       </div>
     </li>
     <li class="nav-item">
-          <a class="nav-link account" href="account.html"><i class="fas fa-user"></i>&nbsp;My Account</a>
+          <a class="nav-link account" href="account.html"><i class="fas fa-user"></i>&nbsp;Sign In</a>
     </li>
 	</ul>
   <ul class="navbar-nav">
@@ -91,20 +91,23 @@
   -webkit-transform-origin: top left;
 -ms-transform-origin: top left;
 transform-origin: top left;
-  position: fixed;
-  width: 180px;
-  height: 60px;
-  padding: 25px  !important;
+  width: 160px;
+  height: 43px;
+  display: block;
+  position:fixed;
   text-align: center;
+  box-sizing: border-box;
   top: 45%;
-  left:100vw;
+  left:100%;
+  font-size:16px;
   right:0;
   transform: translateY(-50%);
-  border-radius:10px !important;
-  z-index:1;
+  border-radius:0px 0px 10px 10px !important;
+  z-index:1000 !important;
   color: rgb(0, 0, 0) !important;
   background-color: rgb(255, 185, 0) !important;
-  box-shadow: rgb(204, 204, 204) 0px 0px 5px; border-width: 0px 4px 4px;
+  box-shadow: rgb(204, 204, 204) 0px 0px 5px;
+  border-width: 0px 4px 4px;
 }
  .libchat_offline{
   transform: rotate(90deg) !important;
@@ -112,17 +115,17 @@ transform-origin: top left;
 -ms-transform-origin: top left;
 transform-origin: top left;
   position: fixed;
-  width: 180px;
-  height: 60px;
-  padding: 25px  !important;
+  width: 160px;
+  height: 43px;
   text-align: center;
   top: 45%;
-  left:100vw;
+  font-size:16px;
+  left:100% !important;
   right:0;
   transform: translateY(-50%);
-  border-radius:10px !important;
+  border-radius:0px 0px 10px 10px !important;
   color:black !important;
-  z-index:1;
+  z-index:1000 !important;
   background-color: rgb(255, 185, 0) !important;
   box-shadow: rgb(204, 204, 204) 0px 0px 5px; border-width: 0px 4px 4px;
 }
@@ -139,6 +142,12 @@ transform-origin: top left;
        <input id="ebscohostsearchmode" type="hidden" name="ebscohostsearchmode" value="+" />
        <input id="ebscohostkeywords" type="hidden" name="ebscohostkeywords" value="" />
        <div class="input-group input-group-lg">
+         <div class="container">
+   <!-- <div class="alert">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    <i class="fas fa-exclamation-triangle"></i>&nbsp;&nbsp; We are experiencing intermittent service interruptions with our search bar below and EBSCO databases. While service is being restored, please use our <a style="text-decoration:underline; color:white !important;" href="https://cat.pratt.edu">catalog</a> to search our local collections and our <a style="text-decoration:underline; color:white !important;" href="https://libguides.pratt.edu/az.php">Databases</a> for articles.
+   </div> -->
+  </div>
         <input id="ebscohostsearchtext" name="ebscohostsearchtext" aria-label="Search through library collections" class="form-control py=2 shadow search-bar" placeholder="Find books, articles, guides & more" type="text" />
         <span class="input-group-append">
         <button type="submit" aria-label="Library Search" value="search" class="btn btn-outline-secondary border-0 search-button"><i class="fa fa-search"></i>
@@ -153,12 +162,7 @@ transform-origin: top left;
         <a href="https://libguides.pratt.edu/filmcollection" target="_blank"><i class="fas fa-tv"></i>&nbsp;&nbsp;Film & Video</a>
         <a href="https://libguides.pratt.edu/equipment" target="_blank"><i class="fas fa-camera"></i>&nbsp;&nbsp;Equipment</a>
       </div> -->
-	      <!--<div class="container">
- <div class="alert">
-  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-  <i class="fas fa-exclamation-triangle"></i>&nbsp;&nbsp; Hey there's something happening
- </div>
-</div> -->
+
      </form>
 	 <a style="color:white !important; float:right; margin-top:5px" href="https://search.ebscohost.com/login.aspx?direct=true&authtype=ip,guest&custid=s8440772&setup=1&groupid=main&profile=eds">Advanced Search</a>
      </div>
@@ -173,38 +177,50 @@ transform-origin: top left;
 <!-- Page Content -->
 <div class="container" style="margin-top:35px;">
   <div class="row">
-    <div class="col-lg-4 col-sm-6 mb-12">
-      <div class="card">
+    <div class="col-lg-8 col-sm-12 mb-12">
+                    <div class="row">
+        <style>
+    .pratt-btn{
+    	background-color:#FFB900;
+    	margin:1rem;
+    	padding: 1.25rem;
+    	border-radius:5px;
+    	color:black !important;
+    display:block;
+    	text-align:center;
+            transition-duration: 0.2s;}
+    .pratt-btn:hover{
+        background-color:#0C77D4 !important;
+        color:white !important;
+    text-decoration:none;
+            }
 
-        <div class="card-body">
-          <h2>Common Tasks</h2><hr>
-            <div>
-              <a class="btn btn-primary expert-tool shadow-sm" href="https://cat.pratt.edu/" target="_blank"><i class="fas fa-book"></i>&nbsp;&nbsp;Books</a>
-              <a class="btn btn-primary expert-tool shadow-sm" href="https://libguides.pratt.edu/az.php"><i class="fas fa-file-alt"></i>&nbsp;&nbsp;Databases</a>
-              <a class="btn btn-primary expert-tool shadow-sm" href="https://search.ebscohost.com/login.aspx?authtype=ip,guest&custid=s8440772&groupid=main&direct=true&db=edspub&profile=eds&plp=1" target="_blank"><i class="fas fa-list-alt"></i>&nbsp;&nbsp;Journals</a>
-              <a class="btn btn-primary expert-tool shadow-sm" href="https://libguides.pratt.edu/visualresources"><i class="fas fa-images"></i>&nbsp;&nbsp;Images</a>
-              <a class="btn btn-primary expert-tool shadow-sm" href="https://libguides.pratt.edu/filmcollection"><i class="fas fa-tv"></i>&nbsp;&nbsp;Film & Video</a>
-              <a class="btn btn-primary expert-tool shadow-sm" href="https://libguides.pratt.edu/equipment"><i class="fas fa-camera"></i>&nbsp;&nbsp;Equipment</a>
-              <a class="btn btn-primary expert-tool shadow-sm" href="https://libguides.pratt.edu/?b=s"><i class="fas fa-book-open"></i>&nbsp;&nbsp;Research Guides</a>
-              <!--<a class="btn btn-primary expert-tool shadow-sm" href="https://cat.pratt.edu/search/r" target="_blank"><i class="fas fa-lock"></i>&nbsp;&nbsp;Course Reserves</a>-->
-          </div>
-      </div>
-    </div>
-    </div>
-    <div class="col-lg-4 col-sm-6 mb-12">
-      <div class="card">
-        <div class="card-body">
-          <h2 style="display:inline;">Remote Services</h2>&nbsp;<a style="display:inline;" data-tooltip="During COVID-19, the libraries are offering special services to help you with research and maintain social distancing. Use our online learning tips to find only digital materials. Watch our video tutorials to learn the best research techniques. Request library materials for a no-contact pickup."><i class="fa fa-question-circle"></i></a><hr>
-            <div>
-              <a class="h5 pratt-btn header-link" href="https://libguides.pratt.edu/remote_learning/tips"><i class="fas fa-laptop"></i>&nbsp;&nbsp;Online Learning Tips</a>
-<a class="h5 pratt-btn header-link" href="https://libguides.pratt.edu/remote_learning/instruction"><i class="fas fa-play-circle"></i>&nbsp;&nbsp;Video Tutorials</a>
-<a class="h5 pratt-btn header-link" href="https://pratt.libcal.com/reserve/spaces/holds-pickup"><i class="fas fa-box-open"></i>&nbsp;&nbsp;Contact-free Pickup</a>
-<a class="h5 pratt-btn header-link" href="https://pratt.libcal.com/reserve/spaces/holds-pickup"><i class="fas fa-chalkboard-teacher"></i>&nbsp;&nbsp;Virtual Research Help</a>
+        </style>
+            <div class="col-lg-6 col-sm-12 mb-12">
 
-          </div>
-      </div>
-    </div>
-    </div>
+    <div>
+      <a class="h5 pratt-btn header-link" href="https://libguides.pratt.edu/remote_learning/tips"><i class="fas fa-laptop"></i>&nbsp;&nbsp;Online Learning Tips</a>
+    </div></div><div class="col-lg-6 col-sm-12 mb-12">
+
+    <div>
+      <a class="h5 pratt-btn header-link" href="https://libguides.pratt.edu/remote_learning/pickup"><i class="fas fa-shopping-bag"></i>&nbsp;&nbsp;Contact-free Pickup</a>
+    </div></div></div>
+                        <div class="card">
+                            <div class="card-body">
+                                <div>
+                                    <h3 class="hide">Find Resources</h3>
+                                    <a id="find-books" class="btn btn-primary expert-tool shadow-sm" href="https://cat.pratt.edu/?_ga=2.47011936.691533002.1603661021-986703943.1596472178"><i class="fas fa-2x fa-book"></i>Books</a>
+                                    <a id="find-databases" class="btn btn-primary expert-tool shadow-sm" href="https://libguides.pratt.edu/az.php"><i class="fas fa-2x fa-file-alt"></i>Databases</a>
+                                    <a id="find-journals" class="btn btn-primary expert-tool shadow-sm" href="https://search.ebscohost.com/login.aspx?authtype=ip,guest&amp;custid=s8440772&amp;groupid=main&amp;direct=true&amp;db=edspub&amp;profile=eds&amp;plp=1" target="_blank"><i class="fas fa-2x fa-list-alt"></i>Journals</a>
+                                    <a id="find-images" class="btn btn-primary expert-tool shadow-sm" href="https://libguides.pratt.edu/visualresources"><i class="fas fa-2x fa-images"></i>Images</a>
+                                    <a id="find-video" class="btn btn-primary expert-tool shadow-sm" href="https://libguides.pratt.edu/filmcollection"><i class="fas fa-2x fa-tv"></i>Film &amp; Video</a>
+                                    <a id="find-equipment" class="btn btn-primary expert-tool shadow-sm" href="https://libguides.pratt.edu/equipment"><i class="fas fa-2x fa-camera"></i>Equipment</a>
+                                    <a id="find-guides" class="btn btn-primary expert-tool shadow-sm" href="https://libguides.pratt.edu/?b=s"><i class="fas fa-2x fa-book-open"></i>Research Guides</a>
+                                    <a id="find-reserves" class="btn btn-primary expert-tool shadow-sm" href="https://cat.pratt.edu/search/r/" target="_blank"><i class="fas fa-2x fa-lock"></i>Course Reserves</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
       <div class="col-lg-4 col-sm-12 mb-4">
         <div class="card">
           <div class="card-body">
@@ -461,5 +477,10 @@ springshare_widget_config_1579290774229 = { path: 'blogs' };
   </div>
 </div>
 </footer>
+<!-- <div class="fixed-bottom alert">
+<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  <h5><i class="fas fa-exclamation-triangle"></i>&nbsp;&nbsp; Starting Fall 2020, the libraries will offer contact-free pickup and scanning services. For more information, See our <a class="btn btn-primary" href="https://libguides.pratt.edu/remote_learning/updates">Service Updates</a></h5>
+   </div> -->
+ </div></div>
 </body>
 </html>
