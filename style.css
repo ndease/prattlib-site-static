@@ -1,9 +1,13 @@
 <style>
-
+:root {
+  font-size:1rem;
+}
 html,  body  {
     margin:  0;
     padding:  0;
 }
+
+@font-face {
 font-family: 'ApercuBold';
     src:  url("https://www.pratt.edu/assets/fonts/apercu-bold-webfont.eot/fonts/apercu-bold-webfont.eot");
     src:  url("https://www.pratt.edu/assets/fonts/apercu-bold-webfont.eot?#iefix") format("embedded-opentype"),  url("https://www.pratt.edu/assets/fonts/apercu-bold-webfont.svg#ApercuBold") format("svg"),  url("https://www.pratt.edu/assets/fonts/apercu-bold-webfont.woff") format("woff"),  url("https://www.pratt.edu/assets/fonts/apercu-bold-webfont.ttf") format("truetype");
@@ -73,9 +77,10 @@ font-family: 'ApercuBold';
     font-weight:  normal;
     font-style:  normal;
 }
+
 h1,  h2,  h3,  h4,  h5,  h6  {
-    font-family:  "ApercuMedium",  Helvetica,  Arial,  sans-serif !important;
-    font-weight:  normal !important;
+    font-family:  "ApercuMedium",  Helvetica,  Arial,  sans-serif;
+    font-weight:  normal;
 }
 p,  pre  {
     font-family:  "LyonRegular",  Helvetica,  Arial,  sans-serif;
@@ -85,7 +90,7 @@ p,  pre  {
     letter-spacing:  normal;
 }
 p a  {
-    color:  #000000 !important;
+    color:  #000000;
     padding:  2px;
     border-bottom:  1px solid #0C77D4;
     border-bottom-width:  1px;
@@ -95,7 +100,7 @@ p a  {
     text-decoration:  none;
 }
 p a:hover  {
-    color:  #FFFFFF !important;
+    color:  #FFFFFF;
     background-color:  #0C77D4;
     padding:  2px;
     transition:  background .15s cubic-bezier(.33,  .66,  .66,  1);
@@ -123,13 +128,13 @@ h1  {
 }
 h2  {
     font-size:  1.5rem !important;
-    font-family:  inherit;
     font-weight:  500 !important;
     line-height:  1.2 !important;
     color:  inherit !important;
     margin-top:  0 !important;
     letter-spacing:  0.09em !important;
     text-transform:  uppercase;
+
 }
 h3  {
     font-size:  2.25em;
@@ -247,7 +252,7 @@ p  {
     font-size:  1em;
 }
 a  {
-    color:  #0C77D4 !important;
+    color:  #0C77D4;
     -webkit-transition-property:  color;
     -moz-transition-property:  color;
     -o-transition-property:  color;
@@ -276,8 +281,12 @@ a  {
 }
 }
 .navbar-nav  {
-    min-height:  25px!important;
+    min-height:  25px;
     padding:  0;
+}
+
+ul.navbar-nav{
+  margin:0;
 }
 .nav-item  {
     color:  white!important;
@@ -355,18 +364,18 @@ footer  {
     box-shadow:  0px 1px 3px 1px rgba(0, 0, 0, 0.3);
 }
 .navbar-custom .navbar-brand,  .navbar-custom .navbar-text  {
-    color:  white !important;
+    color:  white;
 }
 .navbar-custom .navbar-nav .nav-link  {
-    color:  white !important;
-    font-size:  15px;
+    color:  white;
+    font-size:  1.1rem;
     letter-spacing:  .08em;
 }
 .navbar-custom .nav-item.active .nav-link,  .navbar-custom .nav-item:hover .nav-link  {
-    color:  rgb(255,  185,  0) !important;
+    color:  rgb(255,  185,  0);
 }
 .directory-style  {
-    font-family:  "ApercuRegular",  Helvetica,  Arial,  sans-serif !important;
+    font-family:  "ApercuRegular",  Helvetica,  Arial,  sans-serif;
 }
 .search-bar  {
     border-top-left-radius:  2rem !important;
@@ -477,8 +486,8 @@ footer  {
     r }
 @media (min-width:  1000px)  {
     .home-page-splash  {
-    margin-top:  190px !important;
-    margin-bottom:  140px !important;
+    margin-top:  180px !important;
+    margin-bottom:  100px !important;
     padding:  10px !important;
     width:  60% !important;
     margin-left:  20%;
@@ -500,7 +509,7 @@ footer  {
     color:  #FFB900 !important;
 }
 .quick-tools  {
-    font-size:  15px;
+    font-size:  1rem;
 }
 .quick-tools a  {
     color:  white !important;
@@ -605,7 +614,7 @@ img  {
 }
 .image-text  {
     color:  white;
-    font-size:  20px;
+    font-size:  1.3rem;
     position:  absolute;
     top:  50%;
     left:  50%;
@@ -696,7 +705,7 @@ img  {
 }
 .search-box li a  {
     color:  white;
-    font-size:  14px;
+    font-size:  1rem;
     padding:  5px 15px 5px 15px !important;
 }
 .search-box .nav-item  {
@@ -723,31 +732,6 @@ img  {
     border-width:  1px !important;
     border-radius:  50px !important;
 }
-
-.expert-tool {
-  width: 150px;
-  height: 150px;
-  display: inline-flex !important;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.expert-tool i{
-display:block;
-padding-bottom:.4em;
-}
-@media (max-width: 767px) {
-  .expert-tool {
-      width: 100%;
-      height: 5%;
-      padding-top: 1em !important;
-      padding-bottom: 1em !important;
-      font-size: 1em !important;
-      display: inline-block !important;
-      line-height: 1em !important;
-  }
-}
-
 .dropdown-item  {
     color:  black !important;
 }
@@ -779,7 +763,7 @@ padding-bottom:.4em;
     color:  white;
     border-width:  2px;
     font-family:  "ApercuMedium",  Helvetica,  Arial,  sans-serif !important;
-    font-size:  16px;
+    font-size:  1rem;
     margin:  10px;
 }
 .closebtn  {
@@ -787,7 +771,7 @@ padding-bottom:.4em;
     color:  white;
     font-weight:  bold;
     float:  right;
-    font-size:  22px;
+    font-size:  1.3rem;
     line-height:  20px;
     cursor:  pointer;
     transition:  0.3s;
@@ -827,7 +811,7 @@ padding-bottom:.4em;
     background-color:  rgb(255,  185,  0) !important;
     border-bottom-left-radius:  10px;
     border-bottom-right-radius:  10px;
-    font-size:  17px;
+    font-size:  1.1rem;
     border:  0px !important;
 }
 @media(max-width:800px) {
@@ -841,21 +825,18 @@ padding-bottom:.4em;
 }
 }
 
-.pratt-btn{
-	background-color:#FFB900;
-	margin:1rem;
-	padding: 1.25rem;
-	border-radius:5px;
-	color:black !important;
-display:block;
-	text-align:center;
-        transition-duration: 0.2s;}
-.pratt-btn:hover{
-    background-color:#0C77D4!important;
-    color:white !important;
-text-decoration:none;
-        }
+.expert-tool {
+  width: 150px;
+  height: 150px;
+  display: inline-flex !important;
+  justify-content: center;
+  flex-direction: column;
+}
 
+.expert-tool i{
+display:block;
+padding-bottom:.4em;
+}
 @media (max-width: 767px) {
   .expert-tool {
       width: 100%;
@@ -883,83 +864,34 @@ div#s-lg-widget-1579290774229 > ul > li > a {
   font-family:  "ApercuMedium",  Helvetica,  Arial,  sans-serif !important;
 }
 
-#eq_17982-s-lc-eqw-overlay > h1{
-  font-size:14px !important;
+.pratt-btn{
+    font-family:  "ApercuMedium",  Helvetica,  Arial,  sans-serif !important;
+	background-color:#FFB900;
+	margin:1rem;
+	padding: 1.25rem;
+	border-radius:5px;
+	color:black !important;
+display:block;
+	text-align:center;
+        transition-duration: 0.2s;}
+
+.pratt-btn:hover{
+    background-color:#0C77D4 !important;
+    color:white !important;
+text-decoration:none;
+        }
+
+/*lib-chat button style*/
+
+.s-lch-widget-float-btn{
+box-shadow:none !important;
+background-color: transparent;
+}
+.s-lch-widget-float.open{
+z-index:9000;
 }
 
-/**
- * Tooltip Styles
- */
-
-/* Add this attribute to the element that needs a tooltip */
-[data-tooltip] {
-  position: relative;
-  z-index: 2;
-  cursor: pointer;
-}
-
-/* Hide the tooltip content by default */
-[data-tooltip]:before,
-[data-tooltip]:after {
-  visibility: hidden;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
-  pointer-events: none;
-}
-
-/* Position tooltip above the element */
-[data-tooltip]:before {
-  position: absolute;
-  bottom: 150%;
-  left: 50%;
-  margin-bottom: 5px;
-  margin-left: -80px;
-  padding: 7px;
-  width: 160px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  background-color: #000;
-  background-color: hsla(0, 0%, 20%, 0.9);
-  color: #fff;
-  content: attr(data-tooltip);
-  text-align: center;
-  font-size: 14px;
-  line-height: 1.2;
-}
-
-/* Triangle hack to make tooltip look like a speech bubble */
-[data-tooltip]:after {
-  position: absolute;
-  bottom: 150%;
-  left: 50%;
-  margin-left: -5px;
-  width: 0;
-  border-top: 5px solid #000;
-  border-top: 5px solid hsla(0, 0%, 20%, 0.9);
-  border-right: 5px solid transparent;
-  border-left: 5px solid transparent;
-  content: " ";
-  font-size: 0;
-  line-height: 0;
-}
-
-/* Show tooltip content on hover */
-[data-tooltip]:hover:before,
-[data-tooltip]:hover:after {
-  visibility: visible;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1;
-}
-
-
-.block-icon{
-  color:lightgray;
-  padding-top:.3em;
-  padding-bottom:.3em;
-  display:block !important;
-  text-align:center;
+button.s-lch-widget-float-btn.online.s-lch-widget-img-btn {
+    cursor: pointer;
 }
 </style>
