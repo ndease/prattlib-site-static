@@ -566,9 +566,8 @@ footer  {
     flex-direction:  column;
     min-width:  0;
     word-wrap:  break-word;
-    background-color:  #fff;
+    background-color:  black;
     background-clip:  border-box;
-    border:  1px solid rgba(0,  0,  0,  0.125);
     border-radius:  0.25rem;
 }
 img  {
@@ -688,8 +687,6 @@ img  {
 }
 
 .alert  {
-    background-color:  rgb(249,  66,  58);
-    color:  white;
     border-width:  2px;
     font-family:  "ApercuMedium",  Helvetica,  Arial,  sans-serif;
     font-size:  1rem;
