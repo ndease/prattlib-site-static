@@ -681,6 +681,11 @@ img  {
     color:  white;
     background-color:  #0C77D4;
 }
+
+.directory-style{
+  font-family: "ApercuRegular",  Helvetica,  Arial,  sans-serif;
+  padding-bottom:10px;
+}
 .hide  {
     position:  absolute;
     top:  -9999px ;
